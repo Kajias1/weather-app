@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Прогноз погоды</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <script src="/static/js/index.js" defer></script>
+</head>
+<body>
+
+<header>
+    Прогноз погоды
+</header>
+
+<div class="search-tab-container">
+    <div class="flex-row-container">
+        <div class="search-box-wrapper">
+            <input class="city-name-search-input" id="city-name-search-input" placeholder="Введите название города...">
+            <div class="dropdown" id="city-name-search-dropdown">
+                <div class="dropdown-entry">Москва</div>
+                <div class="dropdown-entry">Санкт-Петербург</div>
+                <div class="dropdown-entry">Новосибирск</div>
+            </div>
+        </div>
+        <button class="city-name-search-input-submit-button" id="city-name-search-input-submit-button">Прогноз</button>
+    </div>
+</div>
+
+<div class="container">
+  <div class="loading" id="loading" style="display: none;">
+    <img src="/static/images/page_loading.gif" alt="Loading..." />
+  </div>
+  <div class="forecast-grid"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+### Ответ на Тестовое задание Python Developer 
+
+# Описание
+
+Веб-приложение на фреймворке FastAPI написанное в рамках тестового задания на позицию Python Developer компании o-complex!
+
+# Использованный стек
+ - FastAPI
+ - Asyncio
+ - HTML, CSS, JS
+ - Pytest
+ - Uvicorn
+
+# Инструкция по запуску
+# (Требуется установленный Docker)
+1. Перейдите в папку проекта weather-app
+2. Запустите команду чтобы создать контейнер - docker build -t weather-app .
+3. После создания контейнера - docker run -d -p 8000:8000 weather-app
+4. В бразуере можете проследовать по URL ссылке - http://127.0.0.1:8000/ или http://localhost:8000/
+
+# Инструкция по авто-тестам
+# (Требуется установленный Python)
+1. Перейдите в папку проекта weather-app
+2. Запустите команду чтобы создать виртуальное окружение - python -m venv venv
+2. Активируйте виртуальное окружение - .\venv\Scripts\activate
+3. Запустите команду - pytest
+
+
+# Телеграм - @beelzeebs
+# Резюме headhunter - https://headhunter.kg/resume/1d3072c7ff0ebceae40039ed1f51346641495a?from=share_ios

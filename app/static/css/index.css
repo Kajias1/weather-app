@@ -1,0 +1,165 @@
+:root {
+    --bg-color: #f4f7fa;
+    --card-bg: #ffffff;
+    --primary: #2c3e50;
+    --secondary: #7f8c8d;
+    --accent: #3498db;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: var(--bg-color);
+    color: var(--primary);
+}
+
+header {
+    background: var(--accent);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+.flex-row-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.search-tab-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.search-box-wrapper {
+    position: relative;
+    width: 500px;
+}
+
+.city-name-search-input {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(224, 218, 209);
+    font-size: 1rem;
+}
+
+.city-name-search-input.adjust {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.city-name-search-input-submit-button {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(224, 218, 209);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.city-name-search-input-submit-button:hover {
+    background-color: rgb(200, 190, 180);
+}
+
+.city-name-search-input-submit-button:active {
+    background-color: rgb(180, 170, 160);
+    transform: scale(0.95);
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(235, 230, 225);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+
+.dropdown.show {
+    display: flex;
+}
+
+.dropdown-entry {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+}
+
+.dropdown-entry:hover {
+    background-color: #f8f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.loading {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.loading img {
+    width: 441px;
+    height: 291px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.forecast-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.forecast-card:hover {
+    transform: translateY(-4px);
+}
+
+.date {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.weather-code {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.precipitation {
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .forecast-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
