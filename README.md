@@ -24,7 +24,4 @@
 2. Запустите команду чтобы создать виртуальное окружение - python -m venv venv
 2. Активируйте виртуальное окружение - .\venv\Scripts\activate
 3. Запустите команду - pytest
-
-
-# Телеграм - @beelzeebs
-# Резюме headhunter - https://headhunter.kg/resume/1d3072c7ff0ebceae40039ed1f51346641495a?from=share_ios
+4. 
